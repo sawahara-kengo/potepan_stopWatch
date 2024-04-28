@@ -40,7 +40,7 @@ function displayTime(){
     const ms = String(currentTime.getMilliseconds());
 
     //デフォルトの値0:0:0:0を現在のカウント時間に上書きする
-    time.textContent = `${h}:${m}:${s}:${ms.slice(-1)}`;
+    time.textContent = `${h}:${m}:${s}:${ms}`;
     //第二引数に指定した時間経過後に第一引数の関数を呼び出す関数 戻り値はtimeoutID
     timeoutID = setTimeout(displayTime,10);
 }
